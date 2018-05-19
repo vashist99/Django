@@ -1,0 +1,14 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body background="{% static 'beautiful-images-wallpaper-(1).jpg' %}">
+    <H1><b><i>DJANGO</i></b></h1>
+    {%block content%}
+    {%endblock%}
+  </body>
+</html>

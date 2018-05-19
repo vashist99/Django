@@ -1,14 +1,17 @@
-{%load static from staticfiles%}
-<!DOCTYPE html>
-<html lang="s" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="% static 'style.css'%">
-  </head>
-  <body>
-      <div id="body">
-    <h1>The Application!</h1>
+{%extends 'base.html'%}
+{%block content%}
+<h1>ARTICLES</h1>
+<p>this is the articles page</p>
+<p>
+{%for var in key%}
+  <div id="title">
+    {{var.title}}
   </div>
-  </body>
-</html>
+  <div id="con">
+    {{var.body}}
+  </div>
+  {%endfor%}
+</p>
+
+
+  {%endblock%}
