@@ -4,5 +4,5 @@ from.import views
 urlpatterns = [
 
     url(r'^$',views.homepage),
-    url(r'^about$',views.about),
+    url(r'/about$',views.about),
 ]
